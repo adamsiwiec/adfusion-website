@@ -5,6 +5,7 @@ import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
+import { ReactSVG } from 'react-svg'
 
 const propTypes = {
   ...SectionProps.types
@@ -63,7 +64,7 @@ const Hero = ({
             {/* <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
               AdFusion.
             </h1> */}
-            <Image className="mt-0 mb-16 reveal-from-bottom"
+            <ReactSVG className="mt-0 mb-16 reveal-from-bottom"
             data-reveal-delay="200"
             src={require('./../../assets/images/adfusion.svg')}
             width={300}
