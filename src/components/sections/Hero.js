@@ -4,8 +4,7 @@ import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Modal from '../elements/Modal';
-import { ReactSVG } from 'react-svg'
-
+import Image from '../elements/Image'
 const propTypes = {
   ...SectionProps.types
 }
@@ -60,15 +59,14 @@ const Hero = ({
       <div className="container-sm">
         <div className={innerClasses}>
           <div className="hero-content">
-            {/* <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              AdFusion.
-            </h1> */}
-            <ReactSVG className="mt-0 mb-16 reveal-from-bottom"
-            data-reveal-delay="200"
+            <div className="reveal-from-bottom" data-reveal-delay="200">
+            <Image className="mt-0 mb-16"
             src={require('./../../assets/images/adfusion.svg')}
-            width={300}
-            height={100} 
-            />
+            width={500}
+            height={300}
+                  />
+            </div>
+        
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
                 Online Advertising in the modern age.
