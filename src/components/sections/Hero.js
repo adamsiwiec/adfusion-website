@@ -5,6 +5,8 @@ import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Modal from '../elements/Modal';
 import Image from '../elements/Image'
+import Typist from 'react-typist';
+
 const propTypes = {
   ...SectionProps.types
 }
@@ -68,16 +70,30 @@ const Hero = ({
             </div>
         
             <div className="container-xs">
-              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                Online Advertising in the modern age.
+              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">        
+            <Typist
+              className="TypistExample-message"
+              cursor={{ hideWhenDone: true }}
+            >
+              online advertising for <b>restaurants.</b>
+              <Typist.Backspace count={12} delay={1000} />
+              <b>hair salons.</b>
+              <Typist.Backspace count={12} delay={1000} />
+              <b>non-profits.</b>
+              <Typist.Backspace count={12} delay={1000} />
+              <b>handymen.</b>
+              <Typist.Backspace count={9} delay={1000} />
+              <b>small businesses.</b>
+
+            </Typist>
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
+                  <Button tag="a" color="primary" wideMobile>
                     Get started
                     </Button>
-                  <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
-                    View on Github
+                  <Button tag="a" color="dark" wideMobile>
+                    Contact
                     </Button>
                 </ButtonGroup>
               </div>
