@@ -45,7 +45,7 @@ const FeaturesTiles = ({
 
   const sectionHeader = {
     title: 'Build up the whole picture',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    paragraph: (<>We know that online marketing is <em><strong>scary</strong></em>. Is anyone going to see my ad? Who is going to see my ad? Will I generate leads? We are here to quell the storm.</>)
   };
 
   return (

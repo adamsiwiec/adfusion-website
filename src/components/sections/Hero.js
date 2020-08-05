@@ -5,7 +5,8 @@ import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Modal from '../elements/Modal';
 import Image from '../elements/Image'
-import Typist from 'react-typist';
+// import Typist from 'react-typist';
+import TypeIt from "typeit-react"
 
 const propTypes = {
   ...SectionProps.types
@@ -71,11 +72,12 @@ const Hero = ({
         
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">        
-            <Typist
+            {/* <Typist
               className="TypistExample-message"
               cursor={{ hideWhenDone: true }}
             >
-              online advertising for <b>restaurants.</b>
+              online advertising for <b>businesses.</b>
+
               <Typist.Backspace count={12} delay={1000} />
               <b>hair salons.</b>
               <Typist.Backspace count={12} delay={1000} />
@@ -85,7 +87,46 @@ const Hero = ({
               <Typist.Backspace count={9} delay={1000} />
               <b>small businesses.</b>
 
-            </Typist>
+            </Typist> */}
+
+<TypeIt
+  getBeforeInit={instance => {
+    instance
+      .pause(200)
+      .type("online advertising for businesses.", {speed: 60})
+      .pause(1000)
+      .move(-12)
+      .pause(200)
+      .type(" <em><strong>your</strong></em>")
+      .move(11)
+      .pause(150)
+      .delete(2, {speed: 1000})
+      .move('END')
+      .pause(1000)
+      .delete(14)
+      .type("<em><strong>restaurants</strong></em>.")
+      .pause(1000)
+      .delete(12)
+      .type("<em><strong>hair salons</strong></em>.")
+      .pause(1000)
+
+      .delete(12)
+      .type("<em><strong>non-profits</strong></em>.")
+      .pause(1000)
+
+      .delete(12)
+      .type("<em><strong>handymen</strong></em>.")
+      .pause(1000)
+
+      .delete(9)
+      .type("<em><strong>your</strong></em> business.")
+
+
+
+    // Remember to return it!
+    return instance;
+  }}
+/>
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>

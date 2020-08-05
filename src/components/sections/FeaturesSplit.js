@@ -51,7 +51,7 @@ const FeaturesSplit = ({
 
   const sectionHeader = {
     title: 'Workflow that just works',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    paragraph: (<> At AdFusion, our mission is to be <em><strong>lean</strong></em>: deliver immediate results with the smallest overhead possible.</>)
   };
 
   return (
@@ -67,13 +67,13 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                  New Markets
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                  Access to the world's largest market
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                In the face of a global pandemic, Northwest Arkansas is moving to quicker and easier means of service: the Internet. Advertising online means showing up in millions of Google searches a year, or reaching thousands of local Arkansans scrolling through Facebook. An online ad is a look to the future.
                   </p>
               </div>
               <div className={
@@ -93,13 +93,13 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                  Targeted
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                  Choose your advertising platform
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                We are platform agnostic. So whether you are trying to reach people searching for your store on Google, excite people about your services on Facebook, or reach a more professional crowd on LinkedIn, the we can connect you to amazing places to advertise in which you can target people interested in what you have to offer. 
                   </p>
               </div>
               <div className={
@@ -119,14 +119,13 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                  arkansas grown
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                Local businesses support local businesses
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                We know the last thing a small business wants to do is call in a corporate ad agency to expand their reach. That’s why we’re here. A local business to expand your reach locally and specifically. We’re here for the business we’re working for.                  </p>
               </div>
               <div className={
                 classNames(
