@@ -71,7 +71,7 @@ const Hero = ({
             </div>
         
             <div className="container-xs">
-              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">        
+              <div className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">        
             {/* <Typist
               className="TypistExample-message"
               cursor={{ hideWhenDone: true }}
@@ -127,7 +127,7 @@ const Hero = ({
     return instance;
   }}
 />
-                </p>
+                </div>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
                   <Button tag="a" color="primary" wideMobile>

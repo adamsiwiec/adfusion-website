@@ -52,6 +52,8 @@ const FeaturesSplit = ({
   const sectionHeader = {
     title: 'Workflow that just works',
     paragraph: (<> At AdFusion, our mission is to be <em><strong>lean</strong></em>: deliver immediate results with the smallest overhead possible.</>)
+    // paragraph: "At AdFusion, our mission is to be lean: deliver immediate results with the smallest overhead possible."
+
   };
 
   return (
