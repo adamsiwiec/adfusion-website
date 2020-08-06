@@ -54,6 +54,7 @@ const Input = ({
   placeholder,
   rows,
   hint,
+  val,
   ...props
 }) => {
 
@@ -69,14 +70,13 @@ const Input = ({
     className
   );
 
-  const Component = type === 'textarea' ? 'textarea' : 'input';
   return (
     <>
       {label && <FormLabel labelHidden={labelHidden} id={props.id}>{label}</FormLabel>}
       <div
         className={wrapperClasses}
       >
-        <Component
+        <input
           {...props}
           type={type !== 'textarea' ? type : null}
           className={classes}
