@@ -19,12 +19,17 @@ const trackPage = page => {
   ReactGA.pageview(page);
 };
 
-const App = () => {
+const App = (props) => {
 
   const childRef = useRef();
   let location = useLocation();
 
   useEffect(() => {
+    const path = (/#!(\/.*)$/.exec(location.hash) || [])[1];
+
+if (path) {
+   props.history.replace(path);
+}
     const page = location.pathname;
     document.body.classList.add('is-loaded')
     childRef.current.init();
