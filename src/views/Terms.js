@@ -1,8 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import ReactMarkdown from "react-markdown/with-html";
-import TermsMarkdown from "../assets/files/terms.md";
-import PrivacyMarkdown from "../assets/files/privacynotice.md";
-import GenericSection from '../components/sections/GenericSection';
+import GenericSection from "../components/sections/GenericSection"
 import classNames from "classnames"
 const Terms = () => {
 
@@ -14,11 +12,12 @@ const Terms = () => {
 
     let getFiles = async () => {
         let promises = [
-            fetch(TermsMarkdown).then(result => result.text()), fetch(PrivacyMarkdown).then(result => result.text())
+            fetch("/files/terms.md").then(result => result.text()), fetch("/files/privacynotice.md").then(result => result.text())
         ]
         let results = await Promise.all(promises)
         setTerms("<br>\n" + results[0])
         setPrivacy("<br>\n" + results[1])
+        console.log(terms, privacy)
         setRan(true)
     }
     useEffect(() => {
