@@ -30,6 +30,9 @@ const FooterNav = ({
         <li>
           <Link to="#0">Support</Link>
         </li>
+        <li>
+          <Link to="/terms">Terms</Link>
+        </li>
       </ul>
     </nav>
   );
