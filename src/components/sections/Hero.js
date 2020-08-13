@@ -7,6 +7,7 @@ import Modal from '../elements/Modal';
 import Image from '../elements/Image'
 // import Typist from 'react-typist';
 import TypeIt from "typeit-react"
+import SmoothScroll from "../elements/SmoothScroll"
 
 const propTypes = {
   ...SectionProps.types
@@ -120,10 +121,6 @@ const Hero = ({
 
       .delete(9)
       .type("<em><strong>your</strong></em> business.")
-
-
-
-    // Remember to return it!
     return instance;
   }}
 />
@@ -131,11 +128,16 @@ const Hero = ({
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
                   <Button tag="a" color="primary" wideMobile>
+                  <SmoothScroll to="cta" duration={2000}>
                     Get started
+                    </SmoothScroll>
                     </Button>
-                  <Button tag="a" color="dark" wideMobile>
+
+                    <a href="mailto:hello@adfusion.cloud">
+                      <Button tag="a" color="dark" wideMobile>
                     Contact
                     </Button>
+                    </a>
                 </ButtonGroup>
               </div>
             </div>

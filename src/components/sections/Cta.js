@@ -46,7 +46,7 @@ const Cta = ({
   const url = "https://cloud.us17.list-manage.com/subscribe/post?u=86727af045e5dac99740602f3&amp;id=7c7ba87175";
 
   return (
-    <section
+    <section id="cta"
       {...props}
       className={outerClasses}
     >

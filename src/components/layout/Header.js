@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
+import SmoothScroll from "./../elements/SmoothScroll"
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -119,9 +120,11 @@ const Header = ({
                     <ul
                       className="list-reset header-nav-right"
                     >
+                      <SmoothScroll duration={700} to="cta">
                       <li>
                         <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
                       </li>
+                      </SmoothScroll>
                     </ul>}
                 </div>
               </nav>

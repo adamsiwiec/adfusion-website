@@ -19,16 +19,16 @@ const FooterNav = ({
     >
       <ul className="list-reset">
         <li>
-          <Link to="#0">Contact</Link>
+        <a href="tel://+14796442578">Call</a>
+        </li>
+        <li>
+          <a href="mailto:hello@adfusion.cloud">Email</a>
         </li>
         <li>
           <Link to="#0">About us</Link>
         </li>
         <li>
           <Link to="#0">FAQ's</Link>
-        </li>
-        <li>
-          <Link to="#0">Support</Link>
         </li>
         <li>
           <Link to="/terms">Terms</Link>
